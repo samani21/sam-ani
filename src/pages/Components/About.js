@@ -5,7 +5,7 @@ const About = () => {
     return (
         <AboutContainer>
             <Container>
-                <h1 >Halo, saya Sam'ani.</h1>
+                <h1 >Halo, saya Sam&apos;ani.</h1>
                 <p>
                     Saya lahir pada <b>21 Juni 1999</b>, dan perjalanan saya dalam dunia teknologi tidaklah dimulai sejak dini. Sejak kecil hingga lulus sekolah, saya tidak terbiasa dengan teknologi. Namun, segalanya berubah ketika saya mulai kuliah di <b>Universitas Kalimantan Muhammad Arsyad Al-Banjari</b>, mengambil jurusan Teknik Informatika.
 

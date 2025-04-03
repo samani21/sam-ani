@@ -7,7 +7,7 @@ const Profil = () => {
                 <ContentContainer>
                     <DetailContainer>
                         <Name>
-                            Sam'ani
+                            Sam&apos;ani
                         </Name>
                         <Add>@sam__ani</Add>
                         <Detail>
