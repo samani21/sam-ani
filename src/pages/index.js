@@ -10,6 +10,7 @@ import About from "./Components/About";
 import Skills from "./Components/Skills";
 import ProjectWork from "./Components/ProjectWork";
 import Experience from "./Components/Experience";
+import Contact from "./Components/Contact";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -65,7 +66,9 @@ export default function Home() {
                   menuActive === "Projects & Works" ?
                     <ProjectWork /> :
                     menuActive === "Experience" ?
-                      <Experience /> : ""
+                      <Experience /> :
+                      menuActive === "Contact" ?
+                        <Contact /> : ""
             }
           </Content>
         </ContentContainer>
