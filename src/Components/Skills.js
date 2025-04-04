@@ -11,15 +11,19 @@ export const Container = styled.div`
     background: #1e1e1e;
     padding: 20px;
     width: 400px;
+    height: 400px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-
+    overflow: auto;
     h1{
         font-size: 24px;
         font-weight: 600;
         margin-bottom: 15px;
         text-align: center;
         color: #ffffff;
+    }
+    &::-webkit-scrollbar{
+        display: none;
     }
 `;
 

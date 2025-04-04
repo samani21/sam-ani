@@ -12,6 +12,8 @@ export const Container = styled.div`
     width: 100%;
     box-sizing: border-box;
     max-width: 500px;
+    height: 400px;
+    overflow: auto;
     h2{
         font-size: 36px;
         font-weight: 600;
@@ -19,6 +21,10 @@ export const Container = styled.div`
         margin-bottom: 30px;
         color: #ffffff;
     }
+
+    &::-webkit-scrollbar{
+            display: none;
+        }
 `;
 
 export const List = styled.div`
@@ -41,6 +47,10 @@ export const Image = styled.div`
     width: 100%;
     height: 200px;
     object-fit: cover;
+    background-image: url(${(props) => props?.image});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 `;
 
 export const Info = styled.div`

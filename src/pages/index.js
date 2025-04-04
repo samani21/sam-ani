@@ -9,6 +9,7 @@ import { useState } from "react";
 import About from "./Components/About";
 import Skills from "./Components/Skills";
 import ProjectWork from "./Components/ProjectWork";
+import Experience from "./Components/Experience";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +26,8 @@ const menu = [
   "Skills",
   "Projects & Works",
   "Experience",
-  "Contact"
+  "Contact",
+  "Learning"
 ]
 export default function Home() {
   const [menuActive, setMenuActive] = useState("About");
@@ -41,8 +43,8 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
       </Head>
-      <BodyController style={{ height: menuActive === "Skills" ? "150vh" : menuActive === "Projects & Works" ? "400vh" : "100vh" }}>
-        <BackgroundTop style={{ height: menuActive === "Skills" ? "150vh" : menuActive === "Projects & Works" ? "400vh" : "100vh" }} />
+      <BodyController>
+        <BackgroundTop />
         <ContentContainer>
           <Content>
             <Profil />
@@ -61,7 +63,9 @@ export default function Home() {
                 menuActive === "Skills" ?
                   <Skills /> :
                   menuActive === "Projects & Works" ?
-                    <ProjectWork /> : ""
+                    <ProjectWork /> :
+                    menuActive === "Experience" ?
+                      <Experience /> : ""
             }
           </Content>
         </ContentContainer>

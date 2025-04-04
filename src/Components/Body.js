@@ -29,10 +29,18 @@ export const Content = styled.div`
 
 export const Menus = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   padding: 10px;
   gap: 20px;
+  width: 100%;
+  overflow: auto;
+  /* &::-webkit-scrollbar{
+    display: none;
+  } */
+   @media (max-width: 457px) {
+    justify-content: normal;
+   }
 `;
 
 export const Menu = styled.div`
