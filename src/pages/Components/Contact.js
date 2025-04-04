@@ -53,7 +53,7 @@ const Contact = () => {
                         </Header>
                         <Detail>
                             <h3>Gitlab</h3>
-                            <p>sam'ani</p>
+                            <p>sam&apos;ani</p>
                         </Detail>
                     </Gitlab>
                 </Content>
